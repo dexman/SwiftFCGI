@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8605E5321C1A40D600E3E901 /* SwiftFCGI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5311C1A40D600E3E901 /* SwiftFCGI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8605E5391C1A40D600E3E901 /* SwiftFCGI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */; };
+		8605E53E1C1A40D600E3E901 /* SwiftFCGITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E53D1C1A40D600E3E901 /* SwiftFCGITests.swift */; };
+		8605E5EC1C1A412E00E3E901 /* cgi-fcgi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E54E1C1A412E00E3E901 /* cgi-fcgi.c */; };
+		8605E62D1C1A412E00E3E901 /* fcgi_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5941C1A412E00E3E901 /* fcgi_config.h */; };
+		8605E6361C1A412E00E3E901 /* fastcgi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E59F1C1A412E00E3E901 /* fastcgi.h */; };
+		8605E6371C1A412E00E3E901 /* fcgi_config_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A01C1A412E00E3E901 /* fcgi_config_x86.h */; };
+		8605E6381C1A412F00E3E901 /* fcgi_stdio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A11C1A412E00E3E901 /* fcgi_stdio.h */; };
+		8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A21C1A412E00E3E901 /* fcgiapp.h */; };
+		8605E63A1C1A412F00E3E901 /* fcgimisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A31C1A412E00E3E901 /* fcgimisc.h */; };
+		8605E63B1C1A412F00E3E901 /* fcgio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A41C1A412E00E3E901 /* fcgio.h */; };
+		8605E63C1C1A412F00E3E901 /* fcgios.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A51C1A412E00E3E901 /* fcgios.h */; };
+		8605E64B1C1A412F00E3E901 /* fcgi_stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5B71C1A412E00E3E901 /* fcgi_stdio.c */; };
+		8605E64C1C1A412F00E3E901 /* fcgiapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5B81C1A412E00E3E901 /* fcgiapp.c */; };
+		8605E64D1C1A412F00E3E901 /* fcgio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5B91C1A412E00E3E901 /* fcgio.cpp */; };
+		8605E6521C1A412F00E3E901 /* os_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5BE1C1A412E00E3E901 /* os_unix.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8605E53A1C1A40D600E3E901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8605E5251C1A40D600E3E901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605E52D1C1A40D600E3E901;
+			remoteInfo = SwiftFCGI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFCGI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8605E5311C1A40D600E3E901 /* SwiftFCGI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftFCGI.h; sourceTree = "<group>"; };
+		8605E5331C1A40D600E3E901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8605E5381C1A40D600E3E901 /* SwiftFCGITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFCGITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8605E53D1C1A40D600E3E901 /* SwiftFCGITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFCGITests.swift; sourceTree = "<group>"; };
+		8605E53F1C1A40D600E3E901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8605E5491C1A412E00E3E901 /* acinclude.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acinclude.m4; sourceTree = "<group>"; };
+		8605E54A1C1A412E00E3E901 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		8605E54D1C1A412E00E3E901 /* cgi-fcgi.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cgi-fcgi.Po"; sourceTree = "<group>"; };
+		8605E54E1C1A412E00E3E901 /* cgi-fcgi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "cgi-fcgi.c"; sourceTree = "<group>"; };
+		8605E54F1C1A412E00E3E901 /* cgi-fcgi.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = "cgi-fcgi.mak"; sourceTree = "<group>"; };
+		8605E5501C1A412E00E3E901 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8605E5511C1A412E00E3E901 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		8605E5521C1A412E00E3E901 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		8605E5531C1A412E00E3E901 /* compile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		8605E5541C1A412E00E3E901 /* config.guess */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.guess; sourceTree = "<group>"; };
+		8605E5551C1A412E00E3E901 /* config.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.log; sourceTree = "<group>"; };
+		8605E5561C1A412E00E3E901 /* config.status */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.status; sourceTree = "<group>"; };
+		8605E5571C1A412E00E3E901 /* config.sub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = config.sub; sourceTree = "<group>"; };
+		8605E5581C1A412E00E3E901 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		8605E5591C1A412E00E3E901 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		8605E55A1C1A412E00E3E901 /* configure.in.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in.orig; sourceTree = "<group>"; };
+		8605E55B1C1A412E00E3E901 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		8605E55D1C1A412E00E3E901 /* cgi-fcgi.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = "cgi-fcgi.1"; sourceTree = "<group>"; };
+		8605E55F1C1A412E00E3E901 /* ap_guida.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ap_guida.htm; sourceTree = "<group>"; };
+		8605E5601C1A412E00E3E901 /* ap_guide.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ap_guide.htm; sourceTree = "<group>"; };
+		8605E5611C1A412E00E3E901 /* apaman.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = apaman.htm; sourceTree = "<group>"; };
+		8605E5621C1A412E00E3E901 /* ch1inta1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ch1inta1.gif; sourceTree = "<group>"; };
+		8605E5631C1A412E00E3E901 /* ch1intra.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ch1intra.gif; sourceTree = "<group>"; };
+		8605E5641C1A412E00E3E901 /* ch1intro.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ch1intro.htm; sourceTree = "<group>"; };
+		8605E5651C1A412E00E3E901 /* ch2c.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ch2c.htm; sourceTree = "<group>"; };
+		8605E5661C1A412E00E3E901 /* ch3perl.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ch3perl.htm; sourceTree = "<group>"; };
+		8605E5671C1A412E00E3E901 /* ch4tcl.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ch4tcl.htm; sourceTree = "<group>"; };
+		8605E5681C1A412E00E3E901 /* cover.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = cover.htm; sourceTree = "<group>"; };
+		8605E5691C1A412E00E3E901 /* covera.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = covera.gif; sourceTree = "<group>"; };
+		8605E56B1C1A412E00E3E901 /* fastcgi.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = fastcgi.htm; sourceTree = "<group>"; };
+		8605E56C1C1A412E00E3E901 /* img00001.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img00001.gif; sourceTree = "<group>"; };
+		8605E56D1C1A412E00E3E901 /* img00002.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img00002.gif; sourceTree = "<group>"; };
+		8605E56E1C1A412E00E3E901 /* img00003.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img00003.gif; sourceTree = "<group>"; };
+		8605E56F1C1A412E00E3E901 /* fcgi-devel-kit.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-devel-kit.htm"; sourceTree = "<group>"; };
+		8605E5701C1A412E00E3E901 /* fcgi-java.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-java.htm"; sourceTree = "<group>"; };
+		8605E5711C1A412E00E3E901 /* fcgi-perf.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-perf.htm"; sourceTree = "<group>"; };
+		8605E5721C1A412E00E3E901 /* fcgi-perl.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-perl.htm"; sourceTree = "<group>"; };
+		8605E5731C1A412E00E3E901 /* fcgi-spec.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-spec.html"; sourceTree = "<group>"; };
+		8605E5741C1A412E00E3E901 /* fcgi-tcl.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "fcgi-tcl.htm"; sourceTree = "<group>"; };
+		8605E5751C1A412E00E3E901 /* FCGI_Accept.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCGI_Accept.3; sourceTree = "<group>"; };
+		8605E5761C1A412E00E3E901 /* FCGI_Finish.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCGI_Finish.3; sourceTree = "<group>"; };
+		8605E5771C1A412E00E3E901 /* FCGI_SetExitStatus.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCGI_SetExitStatus.3; sourceTree = "<group>"; };
+		8605E5781C1A412E00E3E901 /* FCGI_StartFilterData.3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCGI_StartFilterData.3; sourceTree = "<group>"; };
+		8605E5791C1A412E00E3E901 /* omi-logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "omi-logo.gif"; sourceTree = "<group>"; };
+		8605E57A1C1A412E00E3E901 /* overview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = overview.html; sourceTree = "<group>"; };
+		8605E57B1C1A412E00E3E901 /* www5-api-workshop.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "www5-api-workshop.html"; sourceTree = "<group>"; };
+		8605E57E1C1A412E00E3E901 /* authorizer.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = authorizer.Po; sourceTree = "<group>"; };
+		8605E57F1C1A412E00E3E901 /* echo-cpp.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "echo-cpp.Po"; sourceTree = "<group>"; };
+		8605E5801C1A412E00E3E901 /* echo-x.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "echo-x.Po"; sourceTree = "<group>"; };
+		8605E5811C1A412E00E3E901 /* echo.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = echo.Po; sourceTree = "<group>"; };
+		8605E5821C1A412E00E3E901 /* log-dump.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "log-dump.Po"; sourceTree = "<group>"; };
+		8605E5831C1A412E00E3E901 /* size.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = size.Po; sourceTree = "<group>"; };
+		8605E5841C1A412E00E3E901 /* threaded-threaded.Po */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "threaded-threaded.Po"; sourceTree = "<group>"; };
+		8605E5851C1A412E00E3E901 /* authorizer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = authorizer.c; sourceTree = "<group>"; };
+		8605E5861C1A412E00E3E901 /* authorizer.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = authorizer.mak; sourceTree = "<group>"; };
+		8605E5871C1A412E00E3E901 /* echo-cpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "echo-cpp.cpp"; sourceTree = "<group>"; };
+		8605E5881C1A412E00E3E901 /* echo-cpp.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = "echo-cpp.mak"; sourceTree = "<group>"; };
+		8605E5891C1A412E00E3E901 /* echo-x.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "echo-x.c"; sourceTree = "<group>"; };
+		8605E58A1C1A412E00E3E901 /* echo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = echo.c; sourceTree = "<group>"; };
+		8605E58B1C1A412E00E3E901 /* echo.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = echo.mak; sourceTree = "<group>"; };
+		8605E58C1C1A412E00E3E901 /* echox.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = echox.mak; sourceTree = "<group>"; };
+		8605E58D1C1A412E00E3E901 /* log-dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "log-dump.c"; sourceTree = "<group>"; };
+		8605E58E1C1A412E00E3E901 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8605E58F1C1A412E00E3E901 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		8605E5901C1A412E00E3E901 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		8605E5911C1A412E00E3E901 /* size.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = size.c; sourceTree = "<group>"; };
+		8605E5921C1A412E00E3E901 /* size.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = size.mak; sourceTree = "<group>"; };
+		8605E5931C1A412E00E3E901 /* threaded.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = threaded.c; sourceTree = "<group>"; };
+		8605E5941C1A412E00E3E901 /* fcgi_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgi_config.h; sourceTree = "<group>"; };
+		8605E5951C1A412E00E3E901 /* fcgi_config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fcgi_config.h.in; sourceTree = "<group>"; };
+		8605E5971C1A412E00E3E901 /* aplib-hd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "aplib-hd.gif"; sourceTree = "<group>"; };
+		8605E5981C1A412E00E3E901 /* divider.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = divider.gif; sourceTree = "<group>"; };
+		8605E5991C1A412E00E3E901 /* fcgi-hd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "fcgi-hd.gif"; sourceTree = "<group>"; };
+		8605E59A1C1A412E00E3E901 /* mail-hd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "mail-hd.gif"; sourceTree = "<group>"; };
+		8605E59B1C1A412E00E3E901 /* navbar.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = navbar.gif; sourceTree = "<group>"; };
+		8605E59C1C1A412E00E3E901 /* serv-hd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "serv-hd.gif"; sourceTree = "<group>"; };
+		8605E59D1C1A412E00E3E901 /* words-hd.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "words-hd.gif"; sourceTree = "<group>"; };
+		8605E59F1C1A412E00E3E901 /* fastcgi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastcgi.h; sourceTree = "<group>"; };
+		8605E5A01C1A412E00E3E901 /* fcgi_config_x86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgi_config_x86.h; sourceTree = "<group>"; };
+		8605E5A11C1A412E00E3E901 /* fcgi_stdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgi_stdio.h; sourceTree = "<group>"; };
+		8605E5A21C1A412E00E3E901 /* fcgiapp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgiapp.h; sourceTree = "<group>"; };
+		8605E5A31C1A412E00E3E901 /* fcgimisc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgimisc.h; sourceTree = "<group>"; };
+		8605E5A41C1A412E00E3E901 /* fcgio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgio.h; sourceTree = "<group>"; };
+		8605E5A51C1A412E00E3E901 /* fcgios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fcgios.h; sourceTree = "<group>"; };
+		8605E5A61C1A412E00E3E901 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8605E5A71C1A412E00E3E901 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		8605E5A81C1A412E00E3E901 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		8605E5A91C1A412E00E3E901 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		8605E5AB1C1A412E00E3E901 /* FCGIGlobalDefs.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIGlobalDefs.java; sourceTree = "<group>"; };
+		8605E5AC1C1A412E00E3E901 /* FCGIInputStream.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIInputStream.java; sourceTree = "<group>"; };
+		8605E5AD1C1A412E00E3E901 /* FCGIInterface.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIInterface.java; sourceTree = "<group>"; };
+		8605E5AE1C1A412E00E3E901 /* FCGIMessage.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIMessage.java; sourceTree = "<group>"; };
+		8605E5AF1C1A412E00E3E901 /* FCGIOutputStream.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIOutputStream.java; sourceTree = "<group>"; };
+		8605E5B01C1A412E00E3E901 /* FCGIRequest.java */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.java; path = FCGIRequest.java; sourceTree = "<group>"; };
+		8605E5B31C1A412E00E3E901 /* fcgio.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fcgio.Plo; sourceTree = "<group>"; };
+		8605E5B41C1A412E00E3E901 /* libfcgi_la-fcgi_stdio.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libfcgi_la-fcgi_stdio.Plo"; sourceTree = "<group>"; };
+		8605E5B51C1A412E00E3E901 /* libfcgi_la-fcgiapp.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libfcgi_la-fcgiapp.Plo"; sourceTree = "<group>"; };
+		8605E5B61C1A412E00E3E901 /* libfcgi_la-os_unix.Plo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libfcgi_la-os_unix.Plo"; sourceTree = "<group>"; };
+		8605E5B71C1A412E00E3E901 /* fcgi_stdio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fcgi_stdio.c; sourceTree = "<group>"; };
+		8605E5B81C1A412E00E3E901 /* fcgiapp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fcgiapp.c; sourceTree = "<group>"; };
+		8605E5B91C1A412E00E3E901 /* fcgio.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fcgio.cpp; sourceTree = "<group>"; };
+		8605E5BA1C1A412E00E3E901 /* libfcgi.mak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = libfcgi.mak; sourceTree = "<group>"; };
+		8605E5BB1C1A412E00E3E901 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8605E5BC1C1A412E00E3E901 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		8605E5BD1C1A412E00E3E901 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		8605E5BE1C1A412E00E3E901 /* os_unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = os_unix.c; sourceTree = "<group>"; };
+		8605E5BF1C1A412E00E3E901 /* os_win32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = os_win32.c; sourceTree = "<group>"; };
+		8605E5C01C1A412E00E3E901 /* libtool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = libtool; sourceTree = "<group>"; };
+		8605E5C11C1A412E00E3E901 /* LICENSE.TERMS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TERMS; sourceTree = "<group>"; };
+		8605E5C21C1A412E00E3E901 /* ltmain.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ltmain.sh; sourceTree = "<group>"; };
+		8605E5C31C1A412E00E3E901 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		8605E5C41C1A412E00E3E901 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		8605E5C51C1A412E00E3E901 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
+		8605E5C61C1A412E00E3E901 /* Makefile.nt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.nt; sourceTree = "<group>"; };
+		8605E5C71C1A412E00E3E901 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		8605E5C81C1A412E00E3E901 /* mkinstalldirs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = mkinstalldirs; sourceTree = "<group>"; };
+		8605E5CA1C1A412E00E3E901 /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aclocal.m4; sourceTree = "<group>"; };
+		8605E5CB1C1A412E00E3E901 /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChangeLog; sourceTree = "<group>"; };
+		8605E5CC1C1A412E00E3E901 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
+		8605E5CD1C1A412E00E3E901 /* configure.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.in; sourceTree = "<group>"; };
+		8605E5CE1C1A412E00E3E901 /* echo.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = echo.PL; sourceTree = "<group>"; };
+		8605E5CF1C1A412E00E3E901 /* FCGI.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = FCGI.PL; sourceTree = "<group>"; };
+		8605E5D01C1A412E00E3E901 /* FCGI.XL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FCGI.XL; sourceTree = "<group>"; };
+		8605E5D11C1A412E00E3E901 /* fcgi_config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fcgi_config.h.in; sourceTree = "<group>"; };
+		8605E5D21C1A412E00E3E901 /* Makefile.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = Makefile.PL; sourceTree = "<group>"; };
+		8605E5D31C1A412E00E3E901 /* MANIFEST */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MANIFEST; sourceTree = "<group>"; };
+		8605E5D41C1A412E00E3E901 /* oldinterface.pod */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = oldinterface.pod; sourceTree = "<group>"; };
+		8605E5D51C1A412E00E3E901 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8605E5D61C1A412E00E3E901 /* remote.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = remote.PL; sourceTree = "<group>"; };
+		8605E5D71C1A412E00E3E901 /* threaded.PL */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = threaded.PL; sourceTree = "<group>"; };
+		8605E5D81C1A412E00E3E901 /* typemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = typemap; sourceTree = "<group>"; };
+		8605E5D91C1A412E00E3E901 /* version.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = version.pm; sourceTree = "<group>"; };
+		8605E5DA1C1A412E00E3E901 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		8605E5DB1C1A412E00E3E901 /* stamp-h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stamp-h.in"; sourceTree = "<group>"; };
+		8605E5DC1C1A412E00E3E901 /* stamp-h1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "stamp-h1"; sourceTree = "<group>"; };
+		8605E5DE1C1A412E00E3E901 /* authorizer.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = authorizer.dsp; sourceTree = "<group>"; };
+		8605E5DF1C1A412E00E3E901 /* cgifcgi.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cgifcgi.dsp; sourceTree = "<group>"; };
+		8605E5E01C1A412E00E3E901 /* config_h.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config_h.dsp; sourceTree = "<group>"; };
+		8605E5E11C1A412E00E3E901 /* echo-cpp.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "echo-cpp.dsp"; sourceTree = "<group>"; };
+		8605E5E21C1A412E00E3E901 /* echo.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = echo.dsp; sourceTree = "<group>"; };
+		8605E5E31C1A412E00E3E901 /* echox.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = echox.dsp; sourceTree = "<group>"; };
+		8605E5E41C1A412E00E3E901 /* FastCGI.dsw */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FastCGI.dsw; sourceTree = "<group>"; };
+		8605E5E51C1A412E00E3E901 /* libfcgi.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libfcgi.dsp; sourceTree = "<group>"; };
+		8605E5E61C1A412E00E3E901 /* logdump.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logdump.dsp; sourceTree = "<group>"; };
+		8605E5E71C1A412E00E3E901 /* size.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = size.dsp; sourceTree = "<group>"; };
+		8605E5E81C1A412E00E3E901 /* threaded.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = threaded.dsp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8605E52A1C1A40D600E3E901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8605E5351C1A40D600E3E901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8605E5391C1A40D600E3E901 /* SwiftFCGI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8605E5241C1A40D600E3E901 = {
+			isa = PBXGroup;
+			children = (
+				8605E5301C1A40D600E3E901 /* SwiftFCGI */,
+				8605E5481C1A412E00E3E901 /* FCGI */,
+				8605E53C1C1A40D600E3E901 /* SwiftFCGITests */,
+				8605E52F1C1A40D600E3E901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8605E52F1C1A40D600E3E901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */,
+				8605E5381C1A40D600E3E901 /* SwiftFCGITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8605E5301C1A40D600E3E901 /* SwiftFCGI */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5311C1A40D600E3E901 /* SwiftFCGI.h */,
+				8605E5331C1A40D600E3E901 /* Info.plist */,
+			);
+			path = SwiftFCGI;
+			sourceTree = "<group>";
+		};
+		8605E53C1C1A40D600E3E901 /* SwiftFCGITests */ = {
+			isa = PBXGroup;
+			children = (
+				8605E53D1C1A40D600E3E901 /* SwiftFCGITests.swift */,
+				8605E53F1C1A40D600E3E901 /* Info.plist */,
+			);
+			path = SwiftFCGITests;
+			sourceTree = "<group>";
+		};
+		8605E5481C1A412E00E3E901 /* FCGI */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5491C1A412E00E3E901 /* acinclude.m4 */,
+				8605E54A1C1A412E00E3E901 /* aclocal.m4 */,
+				8605E54B1C1A412E00E3E901 /* cgi-fcgi */,
+				8605E5531C1A412E00E3E901 /* compile */,
+				8605E5541C1A412E00E3E901 /* config.guess */,
+				8605E5551C1A412E00E3E901 /* config.log */,
+				8605E5561C1A412E00E3E901 /* config.status */,
+				8605E5571C1A412E00E3E901 /* config.sub */,
+				8605E5581C1A412E00E3E901 /* configure */,
+				8605E5591C1A412E00E3E901 /* configure.in */,
+				8605E55A1C1A412E00E3E901 /* configure.in.orig */,
+				8605E55B1C1A412E00E3E901 /* depcomp */,
+				8605E55C1C1A412E00E3E901 /* doc */,
+				8605E57C1C1A412E00E3E901 /* examples */,
+				8605E5941C1A412E00E3E901 /* fcgi_config.h */,
+				8605E5951C1A412E00E3E901 /* fcgi_config.h.in */,
+				8605E5961C1A412E00E3E901 /* images */,
+				8605E59E1C1A412E00E3E901 /* include */,
+				8605E5A91C1A412E00E3E901 /* install-sh */,
+				8605E5AA1C1A412E00E3E901 /* java */,
+				8605E5B11C1A412E00E3E901 /* libfcgi */,
+				8605E5C01C1A412E00E3E901 /* libtool */,
+				8605E5C11C1A412E00E3E901 /* LICENSE.TERMS */,
+				8605E5C21C1A412E00E3E901 /* ltmain.sh */,
+				8605E5C31C1A412E00E3E901 /* Makefile */,
+				8605E5C41C1A412E00E3E901 /* Makefile.am */,
+				8605E5C51C1A412E00E3E901 /* Makefile.in */,
+				8605E5C61C1A412E00E3E901 /* Makefile.nt */,
+				8605E5C71C1A412E00E3E901 /* missing */,
+				8605E5C81C1A412E00E3E901 /* mkinstalldirs */,
+				8605E5C91C1A412E00E3E901 /* perl */,
+				8605E5DA1C1A412E00E3E901 /* README */,
+				8605E5DB1C1A412E00E3E901 /* stamp-h.in */,
+				8605E5DC1C1A412E00E3E901 /* stamp-h1 */,
+				8605E5DD1C1A412E00E3E901 /* Win32 */,
+			);
+			path = FCGI;
+			sourceTree = "<group>";
+		};
+		8605E54B1C1A412E00E3E901 /* cgi-fcgi */ = {
+			isa = PBXGroup;
+			children = (
+				8605E54C1C1A412E00E3E901 /* .deps */,
+				8605E54E1C1A412E00E3E901 /* cgi-fcgi.c */,
+				8605E54F1C1A412E00E3E901 /* cgi-fcgi.mak */,
+				8605E5501C1A412E00E3E901 /* Makefile */,
+				8605E5511C1A412E00E3E901 /* Makefile.am */,
+				8605E5521C1A412E00E3E901 /* Makefile.in */,
+			);
+			path = "cgi-fcgi";
+			sourceTree = "<group>";
+		};
+		8605E54C1C1A412E00E3E901 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				8605E54D1C1A412E00E3E901 /* cgi-fcgi.Po */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		8605E55C1C1A412E00E3E901 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				8605E55D1C1A412E00E3E901 /* cgi-fcgi.1 */,
+				8605E55E1C1A412E00E3E901 /* fastcgi-prog-guide */,
+				8605E56A1C1A412E00E3E901 /* fastcgi-whitepaper */,
+				8605E56F1C1A412E00E3E901 /* fcgi-devel-kit.htm */,
+				8605E5701C1A412E00E3E901 /* fcgi-java.htm */,
+				8605E5711C1A412E00E3E901 /* fcgi-perf.htm */,
+				8605E5721C1A412E00E3E901 /* fcgi-perl.htm */,
+				8605E5731C1A412E00E3E901 /* fcgi-spec.html */,
+				8605E5741C1A412E00E3E901 /* fcgi-tcl.htm */,
+				8605E5751C1A412E00E3E901 /* FCGI_Accept.3 */,
+				8605E5761C1A412E00E3E901 /* FCGI_Finish.3 */,
+				8605E5771C1A412E00E3E901 /* FCGI_SetExitStatus.3 */,
+				8605E5781C1A412E00E3E901 /* FCGI_StartFilterData.3 */,
+				8605E5791C1A412E00E3E901 /* omi-logo.gif */,
+				8605E57A1C1A412E00E3E901 /* overview.html */,
+				8605E57B1C1A412E00E3E901 /* www5-api-workshop.html */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		8605E55E1C1A412E00E3E901 /* fastcgi-prog-guide */ = {
+			isa = PBXGroup;
+			children = (
+				8605E55F1C1A412E00E3E901 /* ap_guida.htm */,
+				8605E5601C1A412E00E3E901 /* ap_guide.htm */,
+				8605E5611C1A412E00E3E901 /* apaman.htm */,
+				8605E5621C1A412E00E3E901 /* ch1inta1.gif */,
+				8605E5631C1A412E00E3E901 /* ch1intra.gif */,
+				8605E5641C1A412E00E3E901 /* ch1intro.htm */,
+				8605E5651C1A412E00E3E901 /* ch2c.htm */,
+				8605E5661C1A412E00E3E901 /* ch3perl.htm */,
+				8605E5671C1A412E00E3E901 /* ch4tcl.htm */,
+				8605E5681C1A412E00E3E901 /* cover.htm */,
+				8605E5691C1A412E00E3E901 /* covera.gif */,
+			);
+			path = "fastcgi-prog-guide";
+			sourceTree = "<group>";
+		};
+		8605E56A1C1A412E00E3E901 /* fastcgi-whitepaper */ = {
+			isa = PBXGroup;
+			children = (
+				8605E56B1C1A412E00E3E901 /* fastcgi.htm */,
+				8605E56C1C1A412E00E3E901 /* img00001.gif */,
+				8605E56D1C1A412E00E3E901 /* img00002.gif */,
+				8605E56E1C1A412E00E3E901 /* img00003.gif */,
+			);
+			path = "fastcgi-whitepaper";
+			sourceTree = "<group>";
+		};
+		8605E57C1C1A412E00E3E901 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				8605E57D1C1A412E00E3E901 /* .deps */,
+				8605E5851C1A412E00E3E901 /* authorizer.c */,
+				8605E5861C1A412E00E3E901 /* authorizer.mak */,
+				8605E5871C1A412E00E3E901 /* echo-cpp.cpp */,
+				8605E5881C1A412E00E3E901 /* echo-cpp.mak */,
+				8605E5891C1A412E00E3E901 /* echo-x.c */,
+				8605E58A1C1A412E00E3E901 /* echo.c */,
+				8605E58B1C1A412E00E3E901 /* echo.mak */,
+				8605E58C1C1A412E00E3E901 /* echox.mak */,
+				8605E58D1C1A412E00E3E901 /* log-dump.c */,
+				8605E58E1C1A412E00E3E901 /* Makefile */,
+				8605E58F1C1A412E00E3E901 /* Makefile.am */,
+				8605E5901C1A412E00E3E901 /* Makefile.in */,
+				8605E5911C1A412E00E3E901 /* size.c */,
+				8605E5921C1A412E00E3E901 /* size.mak */,
+				8605E5931C1A412E00E3E901 /* threaded.c */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		8605E57D1C1A412E00E3E901 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				8605E57E1C1A412E00E3E901 /* authorizer.Po */,
+				8605E57F1C1A412E00E3E901 /* echo-cpp.Po */,
+				8605E5801C1A412E00E3E901 /* echo-x.Po */,
+				8605E5811C1A412E00E3E901 /* echo.Po */,
+				8605E5821C1A412E00E3E901 /* log-dump.Po */,
+				8605E5831C1A412E00E3E901 /* size.Po */,
+				8605E5841C1A412E00E3E901 /* threaded-threaded.Po */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		8605E5961C1A412E00E3E901 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5971C1A412E00E3E901 /* aplib-hd.gif */,
+				8605E5981C1A412E00E3E901 /* divider.gif */,
+				8605E5991C1A412E00E3E901 /* fcgi-hd.gif */,
+				8605E59A1C1A412E00E3E901 /* mail-hd.gif */,
+				8605E59B1C1A412E00E3E901 /* navbar.gif */,
+				8605E59C1C1A412E00E3E901 /* serv-hd.gif */,
+				8605E59D1C1A412E00E3E901 /* words-hd.gif */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		8605E59E1C1A412E00E3E901 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8605E59F1C1A412E00E3E901 /* fastcgi.h */,
+				8605E5A01C1A412E00E3E901 /* fcgi_config_x86.h */,
+				8605E5A11C1A412E00E3E901 /* fcgi_stdio.h */,
+				8605E5A21C1A412E00E3E901 /* fcgiapp.h */,
+				8605E5A31C1A412E00E3E901 /* fcgimisc.h */,
+				8605E5A41C1A412E00E3E901 /* fcgio.h */,
+				8605E5A51C1A412E00E3E901 /* fcgios.h */,
+				8605E5A61C1A412E00E3E901 /* Makefile */,
+				8605E5A71C1A412E00E3E901 /* Makefile.am */,
+				8605E5A81C1A412E00E3E901 /* Makefile.in */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8605E5AA1C1A412E00E3E901 /* java */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5AB1C1A412E00E3E901 /* FCGIGlobalDefs.java */,
+				8605E5AC1C1A412E00E3E901 /* FCGIInputStream.java */,
+				8605E5AD1C1A412E00E3E901 /* FCGIInterface.java */,
+				8605E5AE1C1A412E00E3E901 /* FCGIMessage.java */,
+				8605E5AF1C1A412E00E3E901 /* FCGIOutputStream.java */,
+				8605E5B01C1A412E00E3E901 /* FCGIRequest.java */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		8605E5B11C1A412E00E3E901 /* libfcgi */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5B21C1A412E00E3E901 /* .deps */,
+				8605E5B71C1A412E00E3E901 /* fcgi_stdio.c */,
+				8605E5B81C1A412E00E3E901 /* fcgiapp.c */,
+				8605E5B91C1A412E00E3E901 /* fcgio.cpp */,
+				8605E5BA1C1A412E00E3E901 /* libfcgi.mak */,
+				8605E5BB1C1A412E00E3E901 /* Makefile */,
+				8605E5BC1C1A412E00E3E901 /* Makefile.am */,
+				8605E5BD1C1A412E00E3E901 /* Makefile.in */,
+				8605E5BE1C1A412E00E3E901 /* os_unix.c */,
+				8605E5BF1C1A412E00E3E901 /* os_win32.c */,
+			);
+			path = libfcgi;
+			sourceTree = "<group>";
+		};
+		8605E5B21C1A412E00E3E901 /* .deps */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5B31C1A412E00E3E901 /* fcgio.Plo */,
+				8605E5B41C1A412E00E3E901 /* libfcgi_la-fcgi_stdio.Plo */,
+				8605E5B51C1A412E00E3E901 /* libfcgi_la-fcgiapp.Plo */,
+				8605E5B61C1A412E00E3E901 /* libfcgi_la-os_unix.Plo */,
+			);
+			path = .deps;
+			sourceTree = "<group>";
+		};
+		8605E5C91C1A412E00E3E901 /* perl */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5CA1C1A412E00E3E901 /* aclocal.m4 */,
+				8605E5CB1C1A412E00E3E901 /* ChangeLog */,
+				8605E5CC1C1A412E00E3E901 /* configure */,
+				8605E5CD1C1A412E00E3E901 /* configure.in */,
+				8605E5CE1C1A412E00E3E901 /* echo.PL */,
+				8605E5CF1C1A412E00E3E901 /* FCGI.PL */,
+				8605E5D01C1A412E00E3E901 /* FCGI.XL */,
+				8605E5D11C1A412E00E3E901 /* fcgi_config.h.in */,
+				8605E5D21C1A412E00E3E901 /* Makefile.PL */,
+				8605E5D31C1A412E00E3E901 /* MANIFEST */,
+				8605E5D41C1A412E00E3E901 /* oldinterface.pod */,
+				8605E5D51C1A412E00E3E901 /* README */,
+				8605E5D61C1A412E00E3E901 /* remote.PL */,
+				8605E5D71C1A412E00E3E901 /* threaded.PL */,
+				8605E5D81C1A412E00E3E901 /* typemap */,
+				8605E5D91C1A412E00E3E901 /* version.pm */,
+			);
+			path = perl;
+			sourceTree = "<group>";
+		};
+		8605E5DD1C1A412E00E3E901 /* Win32 */ = {
+			isa = PBXGroup;
+			children = (
+				8605E5DE1C1A412E00E3E901 /* authorizer.dsp */,
+				8605E5DF1C1A412E00E3E901 /* cgifcgi.dsp */,
+				8605E5E01C1A412E00E3E901 /* config_h.dsp */,
+				8605E5E11C1A412E00E3E901 /* echo-cpp.dsp */,
+				8605E5E21C1A412E00E3E901 /* echo.dsp */,
+				8605E5E31C1A412E00E3E901 /* echox.dsp */,
+				8605E5E41C1A412E00E3E901 /* FastCGI.dsw */,
+				8605E5E51C1A412E00E3E901 /* libfcgi.dsp */,
+				8605E5E61C1A412E00E3E901 /* logdump.dsp */,
+				8605E5E71C1A412E00E3E901 /* size.dsp */,
+				8605E5E81C1A412E00E3E901 /* threaded.dsp */,
+			);
+			path = Win32;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8605E52B1C1A40D600E3E901 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8605E63A1C1A412F00E3E901 /* fcgimisc.h in Headers */,
+				8605E6361C1A412E00E3E901 /* fastcgi.h in Headers */,
+				8605E5321C1A40D600E3E901 /* SwiftFCGI.h in Headers */,
+				8605E6371C1A412E00E3E901 /* fcgi_config_x86.h in Headers */,
+				8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */,
+				8605E63C1C1A412F00E3E901 /* fcgios.h in Headers */,
+				8605E63B1C1A412F00E3E901 /* fcgio.h in Headers */,
+				8605E6381C1A412F00E3E901 /* fcgi_stdio.h in Headers */,
+				8605E62D1C1A412E00E3E901 /* fcgi_config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8605E52D1C1A40D600E3E901 /* SwiftFCGI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8605E5421C1A40D600E3E901 /* Build configuration list for PBXNativeTarget "SwiftFCGI" */;
+			buildPhases = (
+				8605E5291C1A40D600E3E901 /* Sources */,
+				8605E52A1C1A40D600E3E901 /* Frameworks */,
+				8605E52B1C1A40D600E3E901 /* Headers */,
+				8605E52C1C1A40D600E3E901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftFCGI;
+			productName = SwiftFCGI;
+			productReference = 8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8605E5371C1A40D600E3E901 /* SwiftFCGITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8605E5451C1A40D600E3E901 /* Build configuration list for PBXNativeTarget "SwiftFCGITests" */;
+			buildPhases = (
+				8605E5341C1A40D600E3E901 /* Sources */,
+				8605E5351C1A40D600E3E901 /* Frameworks */,
+				8605E5361C1A40D600E3E901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8605E53B1C1A40D600E3E901 /* PBXTargetDependency */,
+			);
+			name = SwiftFCGITests;
+			productName = SwiftFCGITests;
+			productReference = 8605E5381C1A40D600E3E901 /* SwiftFCGITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8605E5251C1A40D600E3E901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Arthur Dexter";
+				TargetAttributes = {
+					8605E52D1C1A40D600E3E901 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					8605E5371C1A40D600E3E901 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 8605E5281C1A40D600E3E901 /* Build configuration list for PBXProject "SwiftFCGI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8605E5241C1A40D600E3E901;
+			productRefGroup = 8605E52F1C1A40D600E3E901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8605E52D1C1A40D600E3E901 /* SwiftFCGI */,
+				8605E5371C1A40D600E3E901 /* SwiftFCGITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8605E52C1C1A40D600E3E901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8605E5361C1A40D600E3E901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8605E5291C1A40D600E3E901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8605E64B1C1A412F00E3E901 /* fcgi_stdio.c in Sources */,
+				8605E64C1C1A412F00E3E901 /* fcgiapp.c in Sources */,
+				8605E5EC1C1A412E00E3E901 /* cgi-fcgi.c in Sources */,
+				8605E6521C1A412F00E3E901 /* os_unix.c in Sources */,
+				8605E64D1C1A412F00E3E901 /* fcgio.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8605E5341C1A40D600E3E901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8605E53E1C1A40D600E3E901 /* SwiftFCGITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8605E53B1C1A40D600E3E901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8605E52D1C1A40D600E3E901 /* SwiftFCGI */;
+			targetProxy = 8605E53A1C1A40D600E3E901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8605E5401C1A40D600E3E901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8605E5411C1A40D600E3E901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8605E5431C1A40D600E3E901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftFCGI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8605E5441C1A40D600E3E901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SwiftFCGI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8605E5461C1A40D600E3E901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftFCGITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8605E5471C1A40D600E3E901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftFCGITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8605E5281C1A40D600E3E901 /* Build configuration list for PBXProject "SwiftFCGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8605E5401C1A40D600E3E901 /* Debug */,
+				8605E5411C1A40D600E3E901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8605E5421C1A40D600E3E901 /* Build configuration list for PBXNativeTarget "SwiftFCGI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8605E5431C1A40D600E3E901 /* Debug */,
+				8605E5441C1A40D600E3E901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8605E5451C1A40D600E3E901 /* Build configuration list for PBXNativeTarget "SwiftFCGITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8605E5461C1A40D600E3E901 /* Debug */,
+				8605E5471C1A40D600E3E901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8605E5251C1A40D600E3E901 /* Project object */;
+}
