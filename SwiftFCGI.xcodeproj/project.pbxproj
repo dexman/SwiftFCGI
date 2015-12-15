@@ -15,7 +15,7 @@
 		8605E6361C1A412E00E3E901 /* fastcgi.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E59F1C1A412E00E3E901 /* fastcgi.h */; };
 		8605E6371C1A412E00E3E901 /* fcgi_config_x86.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A01C1A412E00E3E901 /* fcgi_config_x86.h */; };
 		8605E6381C1A412F00E3E901 /* fcgi_stdio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A11C1A412E00E3E901 /* fcgi_stdio.h */; };
-		8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A21C1A412E00E3E901 /* fcgiapp.h */; };
+		8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A21C1A412E00E3E901 /* fcgiapp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8605E63A1C1A412F00E3E901 /* fcgimisc.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A31C1A412E00E3E901 /* fcgimisc.h */; };
 		8605E63B1C1A412F00E3E901 /* fcgio.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A41C1A412E00E3E901 /* fcgio.h */; };
 		8605E63C1C1A412F00E3E901 /* fcgios.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605E5A51C1A412E00E3E901 /* fcgios.h */; };
@@ -23,6 +23,12 @@
 		8605E64C1C1A412F00E3E901 /* fcgiapp.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5B81C1A412E00E3E901 /* fcgiapp.c */; };
 		8605E64D1C1A412F00E3E901 /* fcgio.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5B91C1A412E00E3E901 /* fcgio.cpp */; };
 		8605E6521C1A412F00E3E901 /* os_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 8605E5BE1C1A412E00E3E901 /* os_unix.c */; };
+		8605E67E1C1A469900E3E901 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E67D1C1A469900E3E901 /* Request.swift */; };
+		8605E6821C1A4A4F00E3E901 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6811C1A4A4F00E3E901 /* InputStream.swift */; };
+		8605E6841C1A4A6000E3E901 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6831C1A4A6000E3E901 /* OutputStream.swift */; };
+		8605E6861C1A4DBB00E3E901 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6851C1A4DBB00E3E901 /* Server.swift */; };
+		8693E6C91C1FA4E400B78BE4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6C81C1FA4E400B78BE4 /* Utilities.swift */; };
+		8693E6CB1C1FA63700B78BE4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6CA1C1FA63700B78BE4 /* Errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +194,12 @@
 		8605E5E61C1A412E00E3E901 /* logdump.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = logdump.dsp; sourceTree = "<group>"; };
 		8605E5E71C1A412E00E3E901 /* size.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = size.dsp; sourceTree = "<group>"; };
 		8605E5E81C1A412E00E3E901 /* threaded.dsp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = threaded.dsp; sourceTree = "<group>"; };
+		8605E67D1C1A469900E3E901 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		8605E6811C1A4A4F00E3E901 /* InputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
+		8605E6831C1A4A6000E3E901 /* OutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
+		8605E6851C1A4DBB00E3E901 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		8693E6C81C1FA4E400B78BE4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		8693E6CA1C1FA63700B78BE4 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +244,12 @@
 			isa = PBXGroup;
 			children = (
 				8605E5311C1A40D600E3E901 /* SwiftFCGI.h */,
+				8605E67D1C1A469900E3E901 /* Request.swift */,
+				8605E6811C1A4A4F00E3E901 /* InputStream.swift */,
+				8605E6831C1A4A6000E3E901 /* OutputStream.swift */,
+				8605E6851C1A4DBB00E3E901 /* Server.swift */,
+				8693E6C81C1FA4E400B78BE4 /* Utilities.swift */,
+				8693E6CA1C1FA63700B78BE4 /* Errors.swift */,
 				8605E5331C1A40D600E3E901 /* Info.plist */,
 			);
 			path = SwiftFCGI;
@@ -519,10 +537,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8605E63A1C1A412F00E3E901 /* fcgimisc.h in Headers */,
+				8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */,
 				8605E6361C1A412E00E3E901 /* fastcgi.h in Headers */,
 				8605E5321C1A40D600E3E901 /* SwiftFCGI.h in Headers */,
 				8605E6371C1A412E00E3E901 /* fcgi_config_x86.h in Headers */,
-				8605E6391C1A412F00E3E901 /* fcgiapp.h in Headers */,
 				8605E63C1C1A412F00E3E901 /* fcgios.h in Headers */,
 				8605E63B1C1A412F00E3E901 /* fcgio.h in Headers */,
 				8605E6381C1A412F00E3E901 /* fcgi_stdio.h in Headers */,
@@ -629,8 +647,14 @@
 			files = (
 				8605E64B1C1A412F00E3E901 /* fcgi_stdio.c in Sources */,
 				8605E64C1C1A412F00E3E901 /* fcgiapp.c in Sources */,
+				8605E6841C1A4A6000E3E901 /* OutputStream.swift in Sources */,
+				8605E6821C1A4A4F00E3E901 /* InputStream.swift in Sources */,
 				8605E5EC1C1A412E00E3E901 /* cgi-fcgi.c in Sources */,
+				8605E67E1C1A469900E3E901 /* Request.swift in Sources */,
 				8605E6521C1A412F00E3E901 /* os_unix.c in Sources */,
+				8693E6CB1C1FA63700B78BE4 /* Errors.swift in Sources */,
+				8605E6861C1A4DBB00E3E901 /* Server.swift in Sources */,
+				8693E6C91C1FA4E400B78BE4 /* Utilities.swift in Sources */,
 				8605E64D1C1A412F00E3E901 /* fcgio.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -743,6 +767,7 @@
 		8605E5431C1A40D600E3E901 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -755,12 +780,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8605E5441C1A40D600E3E901 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -817,6 +844,7 @@
 				8605E5441C1A40D600E3E901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8605E5451C1A40D600E3E901 /* Build configuration list for PBXNativeTarget "SwiftFCGITests" */ = {
 			isa = XCConfigurationList;
@@ -825,6 +853,7 @@
 				8605E5471C1A40D600E3E901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
