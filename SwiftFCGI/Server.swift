@@ -54,7 +54,7 @@ func splitKeyValue(keyAndValue: String) -> (String, String)? {
         .split("=", maxSplit: 1, allowEmptySlices: true)
         .map() { String($0) }
 
-    if parts.count == 1 {
+    if parts.count == 1 && !parts[0].isEmpty {
         return (parts[0], "")
     } else if parts.count == 2 {
         return (parts[0], parts[1])

@@ -11,10 +11,10 @@ import Foundation
 
 public struct Request {
 
-    let environment: [String: String]
-    let input: InputStream
-    let output: OutputStream
-    let error: OutputStream
+    public let environment: [String: String]
+    public let input: InputStream
+    public let output: OutputStream
+    public let error: OutputStream
 
 }
 

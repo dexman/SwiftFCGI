@@ -9,12 +9,20 @@
 import Foundation
 
 
-public struct OutputStream {
+public class OutputStream: NSOutputStream {
 
-    public func write(data: NSData) throws {
-        let res = FCGX_PutStr(UnsafePointer<Int8>(data.bytes), Int32(data.length), stream)
-        if res == -1 {
-            throw IOError.WriteError
+    init(stream: UnsafeMutablePointer<FCGX_Stream>) {
+        self.stream = stream
+        super.init(toMemory: ())
+    }
+
+    public override func write(buffer: UnsafePointer<UInt8>, maxLength len: Int) -> Int {
+        return Int(FCGX_PutStr(UnsafePointer<Int8>(buffer), Int32(len), self.stream))
+    }
+
+    public override var hasSpaceAvailable: Bool {
+        get {
+            return true
         }
     }
 

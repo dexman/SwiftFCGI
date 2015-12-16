@@ -27,8 +27,11 @@
 		8605E6821C1A4A4F00E3E901 /* InputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6811C1A4A4F00E3E901 /* InputStream.swift */; };
 		8605E6841C1A4A6000E3E901 /* OutputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6831C1A4A6000E3E901 /* OutputStream.swift */; };
 		8605E6861C1A4DBB00E3E901 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605E6851C1A4DBB00E3E901 /* Server.swift */; };
+		864D67201C21793F00EF216F /* SplitKeyValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D671F1C21793F00EF216F /* SplitKeyValueTests.swift */; };
+		864D67221C217B2900EF216F /* BuildEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D67211C217B2900EF216F /* BuildEnvironmentTests.swift */; };
+		864D67291C21806A00EF216F /* CStringArrayHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D67281C21806A00EF216F /* CStringArrayHandle.swift */; };
 		8693E6C91C1FA4E400B78BE4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6C81C1FA4E400B78BE4 /* Utilities.swift */; };
-		8693E6CB1C1FA63700B78BE4 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6CA1C1FA63700B78BE4 /* Errors.swift */; };
+		8693E6CD1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6CC1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,8 +201,12 @@
 		8605E6811C1A4A4F00E3E901 /* InputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputStream.swift; sourceTree = "<group>"; };
 		8605E6831C1A4A6000E3E901 /* OutputStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputStream.swift; sourceTree = "<group>"; };
 		8605E6851C1A4DBB00E3E901 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		864D671F1C21793F00EF216F /* SplitKeyValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitKeyValueTests.swift; sourceTree = "<group>"; };
+		864D67211C217B2900EF216F /* BuildEnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildEnvironmentTests.swift; sourceTree = "<group>"; };
+		864D67281C21806A00EF216F /* CStringArrayHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStringArrayHandle.swift; sourceTree = "<group>"; };
 		8693E6C81C1FA4E400B78BE4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		8693E6CA1C1FA63700B78BE4 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		8693E6CC1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFromNullTerminatedArrayOfPointersTests.swift; sourceTree = "<group>"; };
+		8693E6CE1C1FB6D500B78BE4 /* SwiftFCGITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFCGITests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,7 +256,6 @@
 				8605E6831C1A4A6000E3E901 /* OutputStream.swift */,
 				8605E6851C1A4DBB00E3E901 /* Server.swift */,
 				8693E6C81C1FA4E400B78BE4 /* Utilities.swift */,
-				8693E6CA1C1FA63700B78BE4 /* Errors.swift */,
 				8605E5331C1A40D600E3E901 /* Info.plist */,
 			);
 			path = SwiftFCGI;
@@ -259,7 +265,12 @@
 			isa = PBXGroup;
 			children = (
 				8605E53D1C1A40D600E3E901 /* SwiftFCGITests.swift */,
+				8693E6CC1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift */,
+				864D67211C217B2900EF216F /* BuildEnvironmentTests.swift */,
+				864D671F1C21793F00EF216F /* SplitKeyValueTests.swift */,
+				864D67281C21806A00EF216F /* CStringArrayHandle.swift */,
 				8605E53F1C1A40D600E3E901 /* Info.plist */,
+				8693E6CE1C1FB6D500B78BE4 /* SwiftFCGITests-Bridging-Header.h */,
 			);
 			path = SwiftFCGITests;
 			sourceTree = "<group>";
@@ -593,7 +604,7 @@
 		8605E5251C1A40D600E3E901 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Arthur Dexter";
 				TargetAttributes = {
@@ -652,7 +663,6 @@
 				8605E5EC1C1A412E00E3E901 /* cgi-fcgi.c in Sources */,
 				8605E67E1C1A469900E3E901 /* Request.swift in Sources */,
 				8605E6521C1A412F00E3E901 /* os_unix.c in Sources */,
-				8693E6CB1C1FA63700B78BE4 /* Errors.swift in Sources */,
 				8605E6861C1A4DBB00E3E901 /* Server.swift in Sources */,
 				8693E6C91C1FA4E400B78BE4 /* Utilities.swift in Sources */,
 				8605E64D1C1A412F00E3E901 /* fcgio.cpp in Sources */,
@@ -663,7 +673,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8693E6CD1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift in Sources */,
 				8605E53E1C1A40D600E3E901 /* SwiftFCGITests.swift in Sources */,
+				864D67291C21806A00EF216F /* CStringArrayHandle.swift in Sources */,
+				864D67221C217B2900EF216F /* BuildEnvironmentTests.swift in Sources */,
+				864D67201C21793F00EF216F /* SplitKeyValueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,22 +820,27 @@
 		8605E5461C1A40D600E3E901 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftFCGITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFCGITests/SwiftFCGITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8605E5471C1A40D600E3E901 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftFCGITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftFCGITests/SwiftFCGITests-Bridging-Header.h";
 			};
 			name = Release;
 		};
