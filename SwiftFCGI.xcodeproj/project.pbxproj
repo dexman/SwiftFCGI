@@ -30,6 +30,9 @@
 		864D67201C21793F00EF216F /* SplitKeyValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D671F1C21793F00EF216F /* SplitKeyValueTests.swift */; };
 		864D67221C217B2900EF216F /* BuildEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D67211C217B2900EF216F /* BuildEnvironmentTests.swift */; };
 		864D67291C21806A00EF216F /* CStringArrayHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D67281C21806A00EF216F /* CStringArrayHandle.swift */; };
+		864D673C1C218A4000EF216F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864D673B1C218A4000EF216F /* main.swift */; };
+		864D673D1C218B3E00EF216F /* SwiftFCGI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */; };
+		864D673E1C218B3E00EF216F /* SwiftFCGI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8693E6C91C1FA4E400B78BE4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6C81C1FA4E400B78BE4 /* Utilities.swift */; };
 		8693E6CD1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8693E6CC1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift */; };
 /* End PBXBuildFile section */
@@ -42,7 +45,28 @@
 			remoteGlobalIDString = 8605E52D1C1A40D600E3E901;
 			remoteInfo = SwiftFCGI;
 		};
+		864D673F1C218B3E00EF216F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8605E5251C1A40D600E3E901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605E52D1C1A40D600E3E901;
+			remoteInfo = SwiftFCGI;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		864D67411C218B3E00EF216F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				864D673E1C218B3E00EF216F /* SwiftFCGI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftFCGI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,6 +228,9 @@
 		864D671F1C21793F00EF216F /* SplitKeyValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitKeyValueTests.swift; sourceTree = "<group>"; };
 		864D67211C217B2900EF216F /* BuildEnvironmentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildEnvironmentTests.swift; sourceTree = "<group>"; };
 		864D67281C21806A00EF216F /* CStringArrayHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CStringArrayHandle.swift; sourceTree = "<group>"; };
+		864D672E1C218A3300EF216F /* SwiftFCGIExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFCGIExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		864D67371C218A3300EF216F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		864D673B1C218A4000EF216F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		8693E6C81C1FA4E400B78BE4 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		8693E6CC1C1FB4FF00B78BE4 /* ArrayFromNullTerminatedArrayOfPointersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayFromNullTerminatedArrayOfPointersTests.swift; sourceTree = "<group>"; };
 		8693E6CE1C1FB6D500B78BE4 /* SwiftFCGITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftFCGITests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -225,6 +252,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		864D672B1C218A3300EF216F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864D673D1C218B3E00EF216F /* SwiftFCGI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -234,6 +269,7 @@
 				8605E5301C1A40D600E3E901 /* SwiftFCGI */,
 				8605E5481C1A412E00E3E901 /* FCGI */,
 				8605E53C1C1A40D600E3E901 /* SwiftFCGITests */,
+				864D672F1C218A3300EF216F /* SwiftFCGIExample */,
 				8605E52F1C1A40D600E3E901 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -243,6 +279,7 @@
 			children = (
 				8605E52E1C1A40D600E3E901 /* SwiftFCGI.framework */,
 				8605E5381C1A40D600E3E901 /* SwiftFCGITests.xctest */,
+				864D672E1C218A3300EF216F /* SwiftFCGIExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -540,6 +577,15 @@
 			path = Win32;
 			sourceTree = "<group>";
 		};
+		864D672F1C218A3300EF216F /* SwiftFCGIExample */ = {
+			isa = PBXGroup;
+			children = (
+				864D673B1C218A4000EF216F /* main.swift */,
+				864D67371C218A3300EF216F /* Info.plist */,
+			);
+			path = SwiftFCGIExample;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -598,6 +644,25 @@
 			productReference = 8605E5381C1A40D600E3E901 /* SwiftFCGITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		864D672D1C218A3300EF216F /* SwiftFCGIExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 864D67381C218A3300EF216F /* Build configuration list for PBXNativeTarget "SwiftFCGIExample" */;
+			buildPhases = (
+				864D672A1C218A3300EF216F /* Sources */,
+				864D672B1C218A3300EF216F /* Frameworks */,
+				864D672C1C218A3300EF216F /* Resources */,
+				864D67411C218B3E00EF216F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				864D67401C218B3E00EF216F /* PBXTargetDependency */,
+			);
+			name = SwiftFCGIExample;
+			productName = SwiftFCGIExample;
+			productReference = 864D672E1C218A3300EF216F /* SwiftFCGIExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -614,6 +679,9 @@
 					8605E5371C1A40D600E3E901 = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
+					864D672D1C218A3300EF216F = {
+						CreatedOnToolsVersion = 7.2;
+					};
 				};
 			};
 			buildConfigurationList = 8605E5281C1A40D600E3E901 /* Build configuration list for PBXProject "SwiftFCGI" */;
@@ -622,6 +690,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 8605E5241C1A40D600E3E901;
 			productRefGroup = 8605E52F1C1A40D600E3E901 /* Products */;
@@ -630,6 +699,7 @@
 			targets = (
 				8605E52D1C1A40D600E3E901 /* SwiftFCGI */,
 				8605E5371C1A40D600E3E901 /* SwiftFCGITests */,
+				864D672D1C218A3300EF216F /* SwiftFCGIExample */,
 			);
 		};
 /* End PBXProject section */
@@ -643,6 +713,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8605E5361C1A40D600E3E901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		864D672C1C218A3300EF216F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -681,6 +758,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		864D672A1C218A3300EF216F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864D673C1C218A4000EF216F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -688,6 +773,11 @@
 			isa = PBXTargetDependency;
 			target = 8605E52D1C1A40D600E3E901 /* SwiftFCGI */;
 			targetProxy = 8605E53A1C1A40D600E3E901 /* PBXContainerItemProxy */;
+		};
+		864D67401C218B3E00EF216F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8605E52D1C1A40D600E3E901 /* SwiftFCGI */;
+			targetProxy = 864D673F1C218B3E00EF216F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -844,6 +934,32 @@
 			};
 			name = Release;
 		};
+		864D67391C218A3300EF216F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftFCGIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		864D673A1C218A3300EF216F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SwiftFCGIExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.dexman.SwiftFCGIExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -873,6 +989,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		864D67381C218A3300EF216F /* Build configuration list for PBXNativeTarget "SwiftFCGIExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				864D67391C218A3300EF216F /* Debug */,
+				864D673A1C218A3300EF216F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
